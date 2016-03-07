@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 1em;
+    color: #fff;
+    height: 2em;
+    text-align: center;
+    background: #00d6b2;
+}
+.btn:hover {
+    background-color: #0b97c4;
+}
+.btn:active {
+    background-color: #2F6FAD;
+}
+.input {
+    border: none;
+    outline: none;
+    padding: 0 .5em;
+    height: 2em;
+    background-color: #fbfbfb;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    color: #000;
+    box-shadow: 0 0 1px #000;
+}
+.num {
+    color: red;
+    font-size: large;
+}
+.system {
+    text-align:center;
+    color: #999;
+    background-color: #fff;
+    border-radius: 1em;
+    font-size:.8em;
+    height: 2em;
+    margin: .5em auto;
+    width: 21em;
+
+}
+.system .msg-system {
+    height: 2em;
+    line-height: 2em;
+}
+body {
+    background-color: #dddddd;
+}
+section {
+    clear:both;
+    margin-bottom: 3em;
+}
+
+li {
+    margin: 1em auto;
+    text-align: center;
+    list-style-type: none;
+}
+li:hover {
+    background-color: #000088;
+}
+
+
+/*login-box css*/
+#login-box {
+    margin: 8em auto;
+    width: 60%;
+    display: block;
+}
+#nickname-input, #room-select{
+    width: 100%;
+    margin-top: 1em;
+}
+#join-btn {
+    width: 40%;
+    margin-top: 1em;
+    float: left;
+}
+#create-btn {
+    width: 40%;
+    margin-top: 1em;
+    float: right;
+}
+
+
+
+
+/*chat-box css*/
+#chat-box {
+    display: none;
+}
+#header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #2F6FAD;
+    height: 2em;
+    line-height: 2em;
+}
+#caption{
+    color: #fff;
+}
+#title{
+    float: left;
+    width: 20%;
+    font-size: 10px;
+}
+#user-info{
+    width: 80%;
+    float: right;
+    font-size: 10px;
+    text-align: right;
+
+}
+#logout{
+    color: #00d6b2;
+}
+#content {
+    width: 100%;
+
+}
+#message {
+    width: 100%;
+    padding: 2em 1em 3em 1em;
+    left: 0;
+    top: 2em;
+    overflow:hidden;
+    zoom:1;
+}
+.service-message {
+    width: 80%;
+    margin: .5em 0;
+    float: left;
+    text-align: left;
+}
+.service-message>.message-div{
+    max-width: 100%;
+    display: inline-block;
+    position:relative;
+    padding:8px;
+    text-align: right;
+    border-radius: 10px;
+    color: #000;
+    box-shadow: inset 0 0 1px #fff;
+    background-color:#fff;
+    vertical-align: top;
+    word-break: break-all;
+}
+.service-message>.message-div:before{
+    content:"";
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-top: solid transparent;
+    border-right: 7px solid #fff;
+    border-bottom: 4px solid transparent;
+}
+.service-message>.name-div{
+    width: 100%;
+    margin-bottom: .5em;
+    font-size: 15px;
+}
+.user-message {
+    width: 80%;
+    margin: .5em 0;
+    float:right;
+    text-align:right;
+}
+.user-message>.message-div {
+    max-width: 100%;
+    position:relative;
+    display: inline-block;
+    padding:8px;
+    text-align:left;
+    border-radius:10px;
+    color:#fff;
+    box-shadow: inset 0 0 1px #007aff;
+    background-color:#007aff;
+    vertical-align: top;
+    word-break: break-all;
+}
+.user-message>.message-div:before {
+    content:"";
+    position: absolute;
+    right: -5px;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-top: solid transparent;
+    border-left: 7px solid #007aff;
+    border-bottom: 4px solid transparent;
+}
+.user-message>.name-div {
+    width: 100%;
+    margin-bottom: .5em;
+    color: red;
+    font-size: 15px;
+}
+#user-list-box {
+    width: .2em;
+    background-color: #fff;
+    color: #fff;
+    position: fixed;
+    top:2em;
+    right:0;
+    bottom: 3em;
+}
+#user-list-box:hover {
+    width: 15em;
+    background-color: #0b97c4;
+}
+#open {
+    right: 0;
+    position: fixed;
+    top: 49%;
+    float: right;
+}
+#input-box {
+    width:100%;
+    box-shadow:0 0 1px #000;
+    background-color:#fff;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    left: 0;
+    line-height: 3em;
+    height: 3em;
+}
+#message-input {
+    width: 85%;
+    margin-top: .5em;
+    float: left;
+}
+#message-btn {
+    width: 15%;
+    margin-top: .5em;
+    float: right;
+}

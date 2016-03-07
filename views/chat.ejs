@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+<div id="login-box">
+    <label>当前房间在线人数: <span id="count" class="num">0</span>/10 | <span id="sec" class="num">60</span>秒内未操作，页面将失效</label>
+    <input id="nickname-input" class="input" type="text" maxlength="5" placeholder="请输入昵称">
+    <select id="room-select" class="input">
+    </select>
+    <input id="join-btn" class="btn" type="button" value="加入房间">
+    <input id="create-btn" class="btn" type="button" value="创建房间">
+</div>
+
+<div id="chat-box">
+
+    <div id="header">
+        <div id="caption">
+            <div id="title">Cool Chat</div>
+            <div id="user-info">
+                <span id="username"></span>|<span id="room"></span>|<a id="logout" href="javascript:;">退出</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="message">
+        </div>
+        <img id="open" src="/images/open.png" alt="open">
+        <div id="user-list-box">
+            <ul id="user-list">
+            </ul>
+        </div>
+        <div id="input-box">
+            <input id="message-input" class="input" placeholder="输入完成后,按Enter进行发送">
+            <input id="message-btn" class="btn" type="button" value="发送">
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="/javascript/chat_client.js"></script>
+</html>
